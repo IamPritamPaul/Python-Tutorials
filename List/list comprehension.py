@@ -41,16 +41,22 @@ Without list comprehension you will have to write a for statement with a conditi
 
 """ Expression """
 """ The expression is the current item in the iteration, but it is also the outcome, which you can manipulate before it ends up like a list item in the new list: """
-# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-# newlist = [x.upper() for x in fruits]
-# print(newlist)
-# newlist = [x.lower() for x in fruits]
-# print(newlist)
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x.upper() for x in fruits]
+print(newlist)
+# ['APPLE', 'BANANA', 'CHERRY', 'KIWI', 'MANGO']
+newlist = [x.lower() for x in fruits]
+print(newlist)
+# ['apple', 'banana', 'cherry', 'kiwi', 'mango']
 
-# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-# newlist=['hello' for x in fruits]
-# print(newlist)
-# print(fruits)
+print("----------------------------------------------------------------")
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist=['hello' for x in fruits]
+print(newlist)
+# ['hello', 'hello', 'hello', 'hello', 'hello']
+print(fruits)
+# ['apple', 'banana', 'cherry', 'kiwi', 'mango']
 
 # fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 # newlist=[x if x!="banana" else "orange" for x in fruits]
